@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1307157488 source:/home/sam/Documents/comp1917/Task2/mandelbrot.c
+	<stdio.h>
+	<stdlib.h>
+	<netinet/in.h>
+	<string.h>
+	<assert.h>
+	<unistd.h>
+	<math.h>
+	"pixelcolour.h"
+
+1307157428 /home/sam/Documents/comp1917/Task2/pixelcolour.h
+
+1307157497 source:/home/sam/Documents/comp1917/Task2/pixelcolour.c
+	"pixelcolour.h"
+	<stdlib.h>
+	<stdio.h>
+

@@ -1,0 +1,73 @@
+import java.util.Random;
+
+public class Game {
+	private int playerTurn;
+	private Player player1;
+	private Player player2;
+	private Card deck[];
+	private int deckCounter;
+	Random generator = new Random();
+	
+	public Game(){
+		this.playerTurn = 1;
+		this.player1 = new Player(1);
+		this.player2 = new Player(2);
+		this.deck = new Card[52];
+		this.deckCounter = 0;
+		int count;
+		for (count = 0; count < 52; count++){
+			this.deck[count] = new Card(count + 1);
+		}
+	}
+	
+	public int turn() {
+		int winner = -1;
+		if (playerTurn == 1) {
+			System.out.println("It is Player 1's turn!");
+			if (deckCounter > 51) {
+				//error
+			} else {
+				player1.drawCard(deck[deckCounter]);
+				deckCounter++;
+			}
+		} else {
+			System.out.println("It is Player 2's turn!");
+			if (deckCounter > 51) {
+				//error
+			} else {
+				player.drawCard(deck[deckCounter]);
+				deckCounter++;
+			}
+		}
+		
+		rollDice();
+		playerTurn++;
+		playerTurn = playerTurn%2;
+		//checkWinner();
+		return winner;
+	}
+	
+	public int[] rollDice () {
+		int dice[] = new int[3];
+		int i;
+		for (i = 0; i < 3; i++) {
+			dice[i] = generator.nextInt(6);
+			System.out.println("You rolled a " + dice[i] + "!");
+		}
+		
+		return dice;
+	}
+	
+	public int rollBattleDice () {
+		return generator.nextInt(6);
+	}
+	
+	public static void main(String[] args) {
+		Game g = new Game();
+		int winner = -1;
+		while (winner == -1) {
+			winner = g.turn();
+		}
+		System.out.println("The winner is player " + winner + "!");
+	}
+}

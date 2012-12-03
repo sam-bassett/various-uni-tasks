@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Tony/Comp2911/workspace/Roma/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tony/Comp2911/workspace/Roma/lib/guava-10.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tony/Comp2911/workspace/Roma/lib/javassist.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tony/Comp2911/workspace/Roma/lib/reflections-0.9.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tony/Comp2911/workspace/Roma/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tony/Comp2911/workspace/Roma/lib/slf4j-nop-1.6.1.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

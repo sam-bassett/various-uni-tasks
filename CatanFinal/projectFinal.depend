@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1305998368 source:/home/sam/Documents/comp1917/projectFinal/Game.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<assert.h>
+	"Game.h"
+
+1305543313 /home/sam/Documents/comp1917/projectFinal/Game.h
+
+1305999003 source:/home/sam/Documents/comp1917/projectFinal/runGame.c
+	<stdio.h>
+	<stdlib.h>
+	"Game.h"
+
